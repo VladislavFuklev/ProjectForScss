@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+<link
+rel="stylesheet"
+href="https://unpkg.com/swiper/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -19,6 +27,29 @@
         </div>
     </div>
    </header>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+              <img src="img/img3.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+              <img src="img/img2.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+              <img src="img/img1.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+              <img src="img/img4.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+              <img src="img/img5.jpg" alt="">
+          </div>
+         
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
 
    <section class="lending">
     <div class="container">
@@ -190,6 +221,21 @@
 
    </section>
 
-   
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+
+   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </body>
 </html>

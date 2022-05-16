@@ -59,12 +59,6 @@ body {
     }
 }
 
-.menu{
-    background-color: black;
-}
-.lending{
-    background-color: black;
-}
 .title{
     @include title;
 }
@@ -109,7 +103,6 @@ body {
 
 
 .features{
-    background-color: black;
     padding-bottom: 60px;
 }
 .features-container {
@@ -190,17 +183,17 @@ body {
     margin-left: 30px;
     list-style: none;
 }
-.descr-list li::before {
-    content: "v";
-    color: rgb(9, 234, 9);
-    margin-right: 10px;
-}
 .descr-list li{
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
     color: #9BA9B4;
     margin-top: 10px;
+    &::before {
+        content: "v";
+        color: rgb(9, 234, 9);
+        margin-right: 10px;
+    }
 }
 
 .descr-sub-title {

@@ -219,6 +219,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     margin-top: 80px;
+    grid-gap: 70px;
 }
 
 .reviews-item{
@@ -303,4 +304,142 @@ body {
 
 .swiper-pagination-bullet {
     background-color: #fff;
+}
+
+
+.banner-section{
+    margin-top: 160px;
+}
+.banner{
+    width:100%;
+    padding: 40px;
+    background-color: #5D5DFF;
+    margin: 0 auto;
+}
+
+.banner-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items:center;
+}
+.banner-title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    color: #FFFFFF;
+}
+.banner-text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #E2E1FF;
+}
+
+.banner-inp{
+    text-align: right;
+    button {
+        padding: 10px 20px;
+        color: #5D5DFF;
+        cursor: pointer;
+        margin-left: 5px;
+        border: none;
+        transition: 0.5s;
+        &:hover {
+            background-color: #4B4ACF;
+            color: white;
+        }
+    }
+    input {
+        padding: 10px;
+        width: 50%;
+        background-color: #4B4ACF;
+        border: none;
+        color: white;
+    }
+}
+
+.description{
+    margin-top: 80px;
+}
+.description-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+.description-item{
+    color: white;
+    a:hover {
+        color: #5D5DFF;
+    }
+}
+
+.description-item-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #9BA9B4;
+    margin-top: 10px;
+    width: 300px;
+}
+
+.description-list{
+    list-style: none;
+    a {
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 14px;
+        color: #9BA9B4;
+    }
+    li {
+        margin: 10px;
+    }
+}
+.description-first{
+    a {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        color: #D9E3EA;
+    }
+    
+}
+
+.footer{
+    margin-top: 80px;
+    padding: 20px;
+}
+.grid-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items:center;
+}
+.footer-date{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #9BA9B4;
+}
+
+.footer-icons{
+    text-align: right;
+    i{
+        font-size: 20px;
+        margin-left: 10px;
+        color: #5D5DFF;
+        padding: 10px;
+        background-color: #25282C;
+        border-radius: 50%;
+        transition: 0.5s;
+        cursor: pointer;
+        &:hover {
+            background-color: #5D5DFF;
+            color: white;
+        }
+    }
 }
